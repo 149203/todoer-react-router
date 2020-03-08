@@ -2,6 +2,40 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Steps to recreate this repo from scratch
+
+Install Node.js and npm.
+
+Open VS Code and add a new terminal.
+
+Go to your code directory.
+
+$_ `npx create-react-app <name-of-your-app>`
+
+Open this folder in VS Code and open a new terminal.
+
+$_ `git log` (Check that CRA has made your first commit.)
+
+Open Github and click "Create a new repository" and name it the same as your folder from the create-react-app command.
+
+Click "create" without touching anything else.
+
+Select and copy the URL of the repo.
+
+$_ `git remote add origin <the-name-of-your-repo>`
+
+$_ `git remote -v` (Check that the remote origin is correct.)
+
+$_ `git push -u origin master` (The -u flag sets the remote as upstream.)
+
+Check your repo in Github.
+
+Add the title to your README.md and save in VS Code.
+
+Add a commit message like "update title in README" then press ctrl + Enter. This should push automatically to your remote repository.
+
+Check your Github repo again. You're good to go!
+
 ## Available Scripts
 
 In the project directory, you can run:
