@@ -6,11 +6,11 @@ export default function Completed() {
       <div className="container">
          <div className="row">
             <div className="col-6 offset-3">
-               <h1>Completed</h1>
+               <h1 className="font-weight-light">Completed</h1>
             </div>
          </div>
          <div className="row">
-            <Navigation />
+            <Navigation layout="completed" />
             <div className="col-6">
                <div className="row"></div>
             </div>

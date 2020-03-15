@@ -18,18 +18,38 @@ $lead-font-size: $font-size-base * 1.5;
    padding: map-get($map: $spacers, $key: 2);
 }
 
+.nav-item {
+   background-color: $white;
+   border-radius: 24px 100px 100px 24px;
+   max-width: 85% !important;
+
+   &:hover {
+      background-color: $blue-100;
+   }
+
+   &:hover .nav-icon .primary {
+      fill: $blue-400;
+   }
+
+   &:hover .nav-icon .secondary {
+      fill: $blue-600;
+   }
+
+   &:hover .nav-label {
+      color: $blue-900;
+   }
+}
+
 .nav-icon {
    width: 32px;
    margin-top: -8px;
 }
 
-.nav-icon path.primary,
-.nav-icon rect.primary {
+.nav-icon .primary {
    fill: $blue-200;
 }
 
-.nav-icon path.secondary,
-.nav-icon rect.secondary {
+.nav-icon .secondary {
    fill: $blue-400;
 }
 
@@ -43,13 +63,11 @@ $lead-font-size: $font-size-base * 1.5;
    max-width: 85% !important;
 }
 
-.nav-active .nav-icon path.primary,
-.nav-active .nav-icon rect.primary {
+.nav-active .nav-icon .primary {
    fill: $blue-400;
 }
 
-.nav-active .nav-icon path.secondary,
-.nav-active .nav-icon rect.secondary {
+.nav-active .nav-icon .secondary {
    fill: $blue-600;
 }
 

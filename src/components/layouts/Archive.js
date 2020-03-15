@@ -6,11 +6,11 @@ export default function Archive() {
       <div className="container">
          <div className="row">
             <div className="col-6 offset-3">
-               <h1>Archive</h1>
+               <h1 className="font-weight-light">Archive</h1>
             </div>
          </div>
          <div className="row">
-            <Navigation />
+            <Navigation layout="archive" />
             <div className="col-6">
                <div className="row"></div>
             </div>

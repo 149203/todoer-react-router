@@ -7,11 +7,11 @@ export default class Today extends Component {
          <div className="container">
             <div className="row">
                <div className="col-6 offset-3">
-                  <h1>Sunday, March 15</h1>
+                  <h1 className="font-weight-light">Sunday, March 15</h1>
                </div>
             </div>
             <div className="row">
-               <Navigation />
+               <Navigation layout="today" />
                <div className="col-6">
                   <div className="row"></div>
                </div>
