@@ -1,0 +1,58 @@
+// Colors
+$blue-050: #e6f6ff;
+$blue-100: #bae3ff;
+$blue-200: #7cc4fa;
+$blue-300: #47a3f3;
+$blue-400: #2186eb;
+$blue-500: #0967d2;
+$blue-600: #0552b5;
+$blue-700: #03449e;
+$blue-800: #01337d;
+$blue-900: #002159;
+
+$lead-font-size: $font-size-base * 1.5;
+
+.header {
+   background-color: $blue-900;
+   color: $white;
+   padding: map-get($map: $spacers, $key: 2);
+}
+
+.nav-icon {
+   width: 32px;
+   margin-top: -8px;
+}
+
+.nav-icon path.primary,
+.nav-icon rect.primary {
+   fill: $blue-200;
+}
+
+.nav-icon path.secondary,
+.nav-icon rect.secondary {
+   fill: $blue-400;
+}
+
+.nav-label {
+   color: $blue-500;
+}
+
+.nav-active {
+   background-color: $blue-050;
+   border-radius: 24px 100px 100px 24px;
+   max-width: 85% !important;
+}
+
+.nav-active .nav-icon path.primary,
+.nav-active .nav-icon rect.primary {
+   fill: $blue-400;
+}
+
+.nav-active .nav-icon path.secondary,
+.nav-active .nav-icon rect.secondary {
+   fill: $blue-600;
+}
+
+.nav-active .nav-label {
+   color: $blue-900;
+}

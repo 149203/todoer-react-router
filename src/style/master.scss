@@ -1,2 +1,10 @@
-@import '../style/bootstrap/bootstrap.scss';
+// Variables used in customization
+@import '../style/bootstrap/functions';
+@import '../style/bootstrap/mixins';
+@import '../style/bootstrap/variables';
+
+// Custom SCSS
 @import '../style/custom';
+
+// Bootstrap defaults
+@import '../style/bootstrap/bootstrap.scss';

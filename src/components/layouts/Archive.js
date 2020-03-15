@@ -1,12 +1,12 @@
 import React from 'react'
 import Navigation from '../sections/Navigation'
 
-function List() {
+export default function Archive() {
    return (
       <div className="container">
          <div className="row">
             <div className="col-6 offset-3">
-               <h1>List</h1>
+               <h1>Archive</h1>
             </div>
          </div>
          <div className="row">
@@ -18,5 +18,3 @@ function List() {
       </div>
    )
 }
-
-export default List
