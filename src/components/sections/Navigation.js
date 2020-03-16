@@ -15,15 +15,15 @@ export default function Navigation(props) {
    return (
       <div className="col-3">
          <div className="row mb-5">
-            {/* If layout === this active nav item, render a non-Link component */}
+            {/* TODO: If layout === this active nav item, render a non-Link component */}
             <Link to="/today" style={{ width: '100%', textDecoration: 'none' }}>
                <div
-                  className={classnames('col-12 p-2 nav-item', {
-                     'nav-active': layout === 'today',
+                  className={classnames('col-12 p-2 nav-today', {
+                     'nav-today-highlighted': layout === 'today',
                   })}
                >
-                  <TodayIcon className="nav-icon" alt="" />
-                  <p className="lead d-inline ml-3 nav-label">Today</p>
+                  <TodayIcon className="icon-today-md-muted" alt="" />
+                  <p className="lead d-inline ml-3 label-today">Today</p>
                </div>
             </Link>
          </div>
@@ -31,12 +31,12 @@ export default function Navigation(props) {
          <div className="row mb-5">
             <Link to="/list" style={{ width: '100%', textDecoration: 'none' }}>
                <div
-                  className={classnames('col-12 p-2 nav-item', {
-                     'nav-active': layout === 'list',
+                  className={classnames('col-12 p-2 nav-list', {
+                     'nav-list-highlighted': layout === 'list',
                   })}
                >
-                  <ListIcon className="nav-icon" alt="" />
-                  <p className="lead d-inline ml-3 nav-label">List</p>
+                  <ListIcon className="icon-list-md-muted" alt="" />
+                  <p className="lead d-inline ml-3 label-list">List</p>
                </div>
             </Link>
          </div>
@@ -47,12 +47,12 @@ export default function Navigation(props) {
                style={{ width: '100%', textDecoration: 'none' }}
             >
                <div
-                  className={classnames('col-12 p-2 nav-item', {
-                     'nav-active': layout === 'archive',
+                  className={classnames('col-12 p-2 nav-archive', {
+                     'nav-archive-highlighted': layout === 'archive',
                   })}
                >
-                  <ArchiveIcon className="nav-icon" alt="" />
-                  <p className="lead d-inline ml-3 nav-label">Archive</p>
+                  <ArchiveIcon className="icon-archive-md-muted" alt="" />
+                  <p className="lead d-inline ml-3 label-archive">Archive</p>
                </div>
             </Link>
          </div>
@@ -63,12 +63,14 @@ export default function Navigation(props) {
                style={{ width: '100%', textDecoration: 'none' }}
             >
                <div
-                  className={classnames('col-12 p-2 nav-item', {
-                     'nav-active': layout === 'completed',
+                  className={classnames('col-12 p-2 nav-completed', {
+                     'nav-completed-highlighted': layout === 'completed',
                   })}
                >
-                  <CompletedIcon className="nav-icon" alt="" />
-                  <p className="lead d-inline ml-3 nav-label">Completed</p>
+                  <CompletedIcon className="icon-completed-md-muted" alt="" />
+                  <p className="lead d-inline ml-3 label-completed">
+                     Completed
+                  </p>
                </div>
             </Link>
          </div>

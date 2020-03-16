@@ -4,7 +4,7 @@ import Navigation from '../sections/Navigation'
 function List() {
    return (
       <div className="container">
-         <div className="row">
+         <div className="row mb-2">
             <div className="col-6 offset-3">
                <h1 className="font-weight-light">List</h1>
             </div>
