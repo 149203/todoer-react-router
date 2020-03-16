@@ -59,6 +59,10 @@ h1 {
    color: $gray-800;
 }
 
+p {
+   line-height: 1.4 !important;
+}
+
 $link-decoration: underline;
 $lead-font-size: $font-size-base * 1.5;
 
@@ -73,59 +77,83 @@ $lead-font-size: $font-size-base * 1.5;
 
 /*            Task Icons             */
 
-.icon-today-lg {
-   width: 52px;
-   border: 2px $blue-300 solid;
-   border-radius: 8px;
-   padding: 8px;
-
+.icon-today {
+   width: 28px;
+   margin-top: 2px;
+   cursor: pointer;
    .primary {
       fill: $blue-400;
    }
    .secondary {
       fill: $blue-600;
    }
+   &:hover {
+      .primary {
+         fill: $blue-700;
+      }
+      .secondary {
+         fill: $blue-900;
+      }
+   }
 }
 
-.icon-list-lg {
-   width: 52px;
-   border: 2px $yellow-500 solid;
-   border-radius: 8px;
-   padding: 8px;
-
+.icon-list {
+   width: 28px;
+   margin-top: 2px;
+   cursor: pointer;
    .primary {
       fill: $yellow-500;
    }
    .secondary {
       fill: $yellow-700;
    }
+   &:hover {
+      .primary {
+         fill: $yellow-700;
+      }
+      .secondary {
+         fill: $yellow-900;
+      }
+   }
 }
 
-.icon-archive-lg {
-   width: 52px;
-   border: 2px $purple-300 solid;
-   border-radius: 8px;
-   padding: 8px;
-
+.icon-archive {
+   width: 25px;
+   margin-top: 3px;
+   cursor: pointer;
    .primary {
       fill: $purple-400;
    }
    .secondary {
       fill: $purple-600;
    }
+   &:hover {
+      .primary {
+         fill: $purple-700;
+      }
+      .secondary {
+         fill: $purple-900;
+      }
+   }
 }
 
-.icon-completed-lg {
-   width: 52px;
-   border: 2px $teal-400 solid;
-   border-radius: 8px;
-   padding: 8px;
-
+.icon-completed {
+   width: 28px;
+   margin-top: 2px;
+   cursor: pointer;
    .primary {
       fill: $teal-500;
    }
    .secondary {
       fill: $teal-700;
+   }
+   &:hover {
+      .primary {
+         fill: $teal-700;
+      }
+      .secondary {
+         fill: $teal-900;
+      }
    }
 }
 
@@ -217,7 +245,7 @@ $lead-font-size: $font-size-base * 1.5;
    }
 
    &:hover .label-list {
-      color: $yellow-800;
+      color: $yellow-900;
    }
 }
 
