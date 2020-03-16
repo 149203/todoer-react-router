@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
    return (
@@ -6,7 +7,18 @@ export default function Header() {
          <div className="container">
             <div className="row">
                <div className="col-12">
-                  <p className="lead mb-0">Todoer</p>
+                  <p className="lead mb-0">
+                     <Link
+                        to="/"
+                        style={{
+                           width: '100%',
+                           textDecoration: 'none',
+                           color: '#ffffff',
+                        }}
+                     >
+                        Todoer
+                     </Link>
+                  </p>
                </div>
             </div>
          </div>
