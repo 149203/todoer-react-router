@@ -11,7 +11,6 @@ export default function Header() {
                      <Link
                         to="/"
                         style={{
-                           width: '100%',
                            textDecoration: 'none',
                            color: '#ffffff',
                         }}
